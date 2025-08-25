@@ -9,7 +9,7 @@ export default function Contact() {
                 <h1>
                     Get In Touch <Dot size="big" />
                 </h1>
-                <p>Looking to partner or work together? Reach out through the form and I{"'"}ll get back to you in the next 48 hours.</p>
+                <p>Looking to partner or work together? Reach out through the contact details and I{"'"}ll get back to you in the next 24 hours.</p>
                 <div className="contact-opts">
                     <div className="opt">
                         <div className="icon">

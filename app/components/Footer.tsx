@@ -42,7 +42,7 @@ export default function Footer() {
                         <Link href={'https://github.com/habeeb4shittu'} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                             <Image src={'images/github.svg'} alt="github-icon" width={25} height={25} />
                         </Link>
-                        <Link href={'https://www.linkedin.com/in/habeeb-shittu-5a013824b/'} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                        <Link href={'https://www.linkedin.com/in/shittuhabeeb/'} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                             <Image src={'images/linkedin.svg'} alt="linkedin-icon" width={25} height={25} />
                         </Link>
                         <Link href={'https://x.com/HabeebAdedolapo'} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

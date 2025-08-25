@@ -7,9 +7,9 @@ const skills = [
     { skill: "Responsive Design", quality: 5 },
     { skill: "User Experience", quality: 4 },
     { skill: "Javascript", quality: 5 },
-    { skill: "jQuery", quality: 4 },
-    { skill: "React.js", quality: 4 },
-    { skill: "Next.js", quality: 3 },
+    { skill: "jQuery", quality: 4.8 },
+    { skill: "React.js", quality: 4.5 },
+    { skill: "Next.js", quality: 4.7 },
     { skill: "HTML5", quality: 5 },
     { skill: "CSS3", quality: 5 },
     { skill: "PHP", quality: 4 },
@@ -63,21 +63,40 @@ export default function About() {
             {/* <section id="xp">
                 <h1>My Experience <Dot size="big" /></h1>
             </section> */}
-            <section className="stack" id="stack">
-                <h1>My Stack.</h1>
-                <div className="about-skill-set">
-                    {skills.map((skill, key) =>
-                        <div className="skill" key={key}>
-                            <span> {skill.skill}</span>
-                            <div className="stars">
-                                {Array.from({ length: skill.quality }, (_, i) => (
-                                    <Image src={'images/star.svg'} alt="" key={i} width={22} height={22} />
-                                ))}
-                            </div>
-                        </div>
-                    )}
-                </div>
+            <section className="stack py-16 px-3" id="stack">
+                <div className="max-w-6xl mx-auto">
+                    <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-12 text-center">
+                        My Stack.
+                    </h1>
 
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {skills.map((skill, key) => (
+                            <div key={key} className="relative group cursor-pointer">
+                                {/* Background bar */}
+                                <div className="h-12 w-full bg-gray-200 shadow-md rounded-full overflow-hidden relative">
+                                    {/* Filled bar with custom gradient */}
+                                    <div
+                                        className="absolute top-0 left-0 h-12 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+                                        style={{
+                                            width: `${skill.quality * 20}%`,
+                                            background: 'linear-gradient(to right, #f2061a, #24262f)',
+                                        }}
+                                    ></div>
+
+                                    {/* Label on hover */}
+                                    <span className="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-gray-900 px-2 py-1 text-sm font-semibold rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                        {skill.quality * 20}%
+                                    </span>
+
+                                    {/* Skill name */}
+                                    <span className={`absolute w-full text-center ${(skill.quality * 20) > 65 ? "hover:text-white" : "hover:text-gray-900"} font-semibold top-0 h-12 flex items-center justify-center pointer-events-none`}>
+                                        {skill.skill}
+                                    </span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </section>
         </>
     );
