@@ -48,7 +48,7 @@ export default function About() {
             </section>
             <section className="myself">
                 <div className="image">
-                    <Image src="/images/me.jpg" alt="My Picture" width={dimensions.width} height={dimensions.height} />
+                    <img src="/images/me.jpg" alt="My Picture" className="w-full h-full" />
                 </div>
                 <div className="journey">
                     <h1>My Journey</h1>
