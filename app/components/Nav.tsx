@@ -115,7 +115,7 @@ export default function Nav() {
                     className="flex items-end gap-0.5 md:gap-1 px-2 md:px-4 py-2 md:py-3 bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[2rem] shadow-2xl h-[55px] md:h-[70px] overflow-x-auto"
                 >
                     <motion.li
-                        className="flex items-center justify-center px-2 md:px-4 h-[40px] md:h-[45px] rounded-full bg-white/10 border border-white/20 text-white font-bold text-xs md:text-sm whitespace-nowrap shrink-0"
+                        className="flex items-center justify-center px-2 md:px-4 h-[40px] md:h-[45px] rounded-full bg-white/10 border border-white/20 text-black font-bold text-xs md:text-sm whitespace-nowrap shrink-0"
                         whileHover={{ backgroundColor: "rgba(255,255,255,0.2)" }}
                     >
                         <a href="/">Habeeb S.</a>
@@ -164,7 +164,7 @@ export default function Nav() {
                         <a
                             href="/"
                             onClick={() => setIsMenuOpen(false)}
-                            className="col-span-3 flex items-center justify-center px-4 py-3 rounded-2xl bg-white/10 border border-white/20 text-white font-bold text-sm"
+                            className="col-span-3 flex items-center justify-center px-4 py-3 rounded-2xl bg-white/10 border border-white/20 text-black font-bold text-sm"
                         >
                             Habeeb S.
                         </a>
@@ -175,10 +175,10 @@ export default function Nav() {
                                 key={index}
                                 href={item.href}
                                 onClick={() => setIsMenuOpen(false)}
-                                className="flex flex-col items-center justify-center gap-2 p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 text-white transition-colors"
+                                className="flex flex-col items-center justify-center gap-2 p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 text-black transition-colors"
                             >
                                 {item.icon}
-                                <span className="text-xs">{item.label}</span>
+                                <span className="text-xs" >{item.label}</span>
                             </a>
                         ))}
                     </div>
