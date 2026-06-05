@@ -26,6 +26,7 @@ export default function RootLayout({
           <Analytics />
         </main>
         <Footer />
+        <script src="https://leadsmind-new-dashboard.vercel.app/api/lena/embed/4b6a9a9c-1634-4b91-95a4-0b51ef4ea780"></script>
       </body>
     </html>
   );
