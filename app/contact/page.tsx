@@ -75,7 +75,7 @@ export default function Contact() {
 
             <div className="image-container">
                 <div className="my-image">
-                    <img src={'/images/me.jpg'} alt="my image" />
+                    <Image src="/images/me.jpg" alt="my image" fill className="rounded-full object-cover" />
                 </div>
             </div>
         </section>

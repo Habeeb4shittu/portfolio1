@@ -184,7 +184,7 @@ export default function About() {
 
             <section className="myself flex flex-col md:flex-row items-center justify-between gap-10 py-16">
                 <div className="image flex-shrink-0 rounded-3xl overflow-hidden shadow-lg w-[320px] lg:w-[400px]">
-                    <img src="/images/me.jpg" alt="My Picture" className="w-full h-full object-cover" />
+                    <Image src="/images/me.jpg" alt="My Picture" width={500} height={500} className="w-full h-full object-cover" />
                 </div>
                 <div className="journey max-w-2xl">
                     <h1 className="text-4xl font-bold mb-4 text-gray-900">My Journey</h1>

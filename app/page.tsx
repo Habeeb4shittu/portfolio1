@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Skills from "./components/Skills";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         </div>
         <div className="image-container">
           <div className="my-image">
-            <img src={'/images/me.jpg'} alt="my image" />
+            <Image src="/images/me.jpg" alt="my image" fill className="rounded-full object-cover" priority />
           </div>
         </div>
       </section>

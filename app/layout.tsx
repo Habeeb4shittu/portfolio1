@@ -5,6 +5,7 @@ import "./styles.css";
 import "./global.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Habeeb's Portfolio",
@@ -26,7 +27,7 @@ export default function RootLayout({
           <Analytics />
         </main>
         <Footer />
-        <script src="https://leadsmind-new-dashboard.vercel.app/api/lena/embed/4b6a9a9c-1634-4b91-95a4-0b51ef4ea780"></script>
+        <Script src="https://leadsmind-new-dashboard.vercel.app/api/lena/embed/4b6a9a9c-1634-4b91-95a4-0b51ef4ea780" strategy="afterInteractive" />
       </body>
     </html>
   );
